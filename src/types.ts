@@ -13,6 +13,7 @@ export interface BasicInfo {
     github: string;
     linkedin: string;
   };
+  school: string;
 }
 
 export interface Experience {

@@ -12,7 +12,8 @@ export const basicInfo: BasicInfo = {
     blog: "https://blog.yby.zone",
     github: "https://github.com/Okysu",
     linkedin: "https://www.linkedin.com/in/okysu"
-  }
+  },
+  school:"常熟理工学院 软件工程21级"
 };
 
 export const experiences: Experience[] = [
