@@ -1,14 +1,12 @@
 import ResumeWebsite from './components/ResumeWebsite';
-import { basicInfo, experiences, awards, projects, skillCategories } from './data';
+import useLanguageDetection from './useLanguageDetection';
 
-export default function App() {
+function App() {
+  const detectedLanguage = useLanguageDetection();
+  
   return (
-    <ResumeWebsite
-      basicInfo={basicInfo}
-      experiences={experiences}
-      awards={awards}
-      projects={projects}
-      skillCategories={skillCategories}
-    />
+    <ResumeWebsite initialLanguage={detectedLanguage} />
   );
 }
+
+export default App;

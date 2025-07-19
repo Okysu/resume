@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.dynamic-text-container {
+  display: inline-block;
+  vertical-align: bottom;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dynamic-text {
+  border-right: 0.15em solid #39FF14; /* 光标 */
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: .1em;
+  animation: blink-caret .75s step-end infinite;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #39FF14; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+/* Glitch 故障效果 */
+.glitch {
+  position: relative;
+  color: #39FF14; /* 亮绿色 */
+  text-shadow: 0 0 1px #39FF14, 0 0 3px #39FF14;
 }
 
-.card {
-  padding: 2em;
+.glitch:hover {
+  animation: glitch-fx 0.4s linear infinite;
 }
 
-.read-the-docs {
-  color: #888;
+@keyframes glitch-fx {
+  0% { transform: translate(0); text-shadow: 0 0 1px #ff00c1, -1px 1px 1px #00fff9; }
+  25% { transform: translate(-2px, 2px); text-shadow: 1px -1px 1px #ff00c1, -1px 1px 1px #00fff9; }
+  50% { transform: translate(2px, -2px); text-shadow: -1px 1px 1px #ff00c1, 1px -1px 1px #00fff9; }
+  75% { transform: translate(2px, 2px); text-shadow: 1px 1px 1px #ff00c1, -2px -1px 1px #00fff9; }
+  100% { transform: translate(0); text-shadow: -1px -1px 1px #ff00c1, 1px 1px 1px #00fff9; }
+}
+
+
+/* 终端风格组件*/
+.terminal-card {
+  border: 1px solid #334155;
+  background: rgba(15, 23, 42, 0.5);
+  transition: border-color 0.3s ease;
+}
+.terminal-card:hover { border-color: #39FF14; }
+
+.command-prompt { color: #39FF14; }
+.command-prompt > span { color: #64748b; }
+
+.section-title { color: #f8fafc; transition: color 0.3s ease; }
+.hover-bright:hover { color: #39FF14; }
+
+.tech-tag-terminal {
+  @apply inline-block px-2 py-0.5 mr-2 mt-2 border border-slate-600 text-slate-400 text-xs transition-all hover:bg-[#39FF14] hover:text-black hover:border-[#39FF14];
+}
+
+.nav-item {
+    @apply px-2 py-1 text-slate-400 transition-all duration-200 hover:bg-[#39FF14] hover:text-black;
+}
+
+/* 入场动画*/
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

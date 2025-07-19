@@ -13,7 +13,7 @@ export const basicInfo: BasicInfo = {
     github: "https://github.com/Okysu",
     linkedin: "https://www.linkedin.com/in/okysu"
   },
-  school:"常熟理工学院 软件工程21级"
+  school:"苏州工学院 软件工程21级"
 };
 
 export const experiences: Experience[] = [
@@ -138,13 +138,7 @@ export const projects: Project[] = [
     "title": "NLQL-Python",
     "description": "像使用SQL一样查询自然语言——SELECT SENTENCE WHERE CONTAINS('example')！在反思LLM应用开发中使用RAG的挑战时，我意识到检索是最关键的部分。受到SQL的启发，我想如果能用类似SQL的语句来查询自然语言，是否可以实现更灵活和精准的信息检索？感谢SeaSideJS和1y-Language的学习基础，让我从想法到实现仅用了一个晚上。",
     "techStack": "Python",
-    "link": "https://github.com/Okysu/1y-Language"
-  },
-  {
-    "id": "dual-creation",
-    "title": "大学生双创管理系统",
-    "description": "这是我加入实验室后参与的第一个项目——一个大学生创新创业管理系统。系统包含项目管理、项目申报、项目评审、项目立项、项目中期检查、项目结题、项目成果和项目统计等模块。",
-    "techStack": "Java/MySQL/Redis/Vue"
+    "link": "https://github.com/natural-language-query-language/nlql-python"
   },
   {
     "id": "chatgpt-web",

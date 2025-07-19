@@ -56,3 +56,22 @@ export interface SkillCategory {
   title: string;
   skills: Skill[];
 }
+
+export interface LanguageStrings {
+  navItems: {
+    experience: string;
+    awards: string;
+    projects: string;
+    skills: string;
+  };
+  skillLevels: {
+    advanced: string;
+    intermediate: string;
+    beginner: string;
+  };
+  highlights: string;
+  certificateNumber: string;
+  viewSource: string;
+  darkMode: string;
+  lightMode: string;
+}
