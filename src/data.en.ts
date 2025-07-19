@@ -1,184 +1,177 @@
 import { BasicInfo, Experience, Award, Project, SkillCategory } from './types';
 
 export const basicInfo: BasicInfo = {
-  name: "于柏杨",
+  name: "Bryce Young",
   englishName: "Bryce Young",
-  location: "Taixing, Taizhou, Jiangsu Province",
+  location: "Taizhou, Jiangsu, China",
   phone: "+86 18852920107",
   email: "yby@ecanse.com",
-  description: "Software engineer with a broad technical vision in both frontend and backend development. Studied Vue.js source code in depth, pays attention to code details, and actively participates in open source community activities. A team-oriented developer with analytical skills and ownership mindset. Possesses exceptional learning abilities, <strong>taking only one week to learn Go and use it to develop an award-winning backend project.</strong> Developed projects using Python, Java, Golang, and other backend languages, and is proficient with MySQL, MongoDB, Redis, and other databases.",
+  description: "A passionate Full-Stack Developer and AI Application Explorer with a broad technical vision and solid engineering practices. <strong>Possesses a deep understanding of Vue.js reactivity principles and the ability to build complex systems from scratch.</strong> Demonstrates rapid learning and application capabilities, mastering Go to develop an award-winning project in a short timeframe. Proficient in a tech stack including Python, Golang, and Node.js, with expertise in databases like MySQL and Redis.",
   links: {
     resume: "https://www.yby.zone",
     blog: "https://blog.yby.zone",
     github: "https://github.com/Okysu",
     linkedin: "https://www.linkedin.com/in/okysu"
   },
-  school: "Suzhou University of Technology, Software Engineering (Class of 2021)"
+  school: "Suzhou Institute of Technology, Software Engineering, Class of 2021"
 };
 
 export const experiences: Experience[] = [
   {
     id: "msft-ambassador",
     title: "Gold Microsoft Learn Student Ambassador",
-    role: "Microsoft Learn Student Ambassador",
-    period: "2022 - Present",
-    description: "Selected as a Microsoft Student Ambassador for Greater China in October 2022. Advanced to Beta milestone within a year by hosting an event on creating HTTP servers with TypeScript and accessing Azure OpenAI services. Promoted to Gold Ambassador in February 2024.",
+    role: "Technical Evangelist & Community Organizer",
+    period: "Oct 2022 - Present",
+    description: "Selected in October 2022, advanced to the Beta milestone by organizing a technical workshop on TypeScript and Azure OpenAI services. Promoted to Gold Ambassador in February 2024 for continuous technical contributions and community influence.",
     highlights: [
       {
-        date: "2023/10/12",
-        content: "Co-hosted a C# teaching livestream with Microsoft MVP Tongming Liang (author of 'ASP.NET Core in Depth'), responsible for 6 out of 7 modules."
+        date: "Oct 2023",
+        content: "Collaborated with Microsoft MVP Liang Tongming, author of 'ASP.NET Core in Depth', leading 6 of 7 modules in a C# livestream series."
       },
       {
-        date: "2023/10/17",
-        content: "Participated in a discussion panel with Greater China MVP Program Lead Di Liang and AI domain MVP experts on AI opportunities and impacts for startups."
+        date: "Oct 2023",
+        content: "Invited to a roundtable forum hosted by the Greater China MVP Program Lead, discussing the impact of AI on startups with several AI-focused MVPs."
       },
       {
-        date: "2024/02/27",
-        content: "Conducted a livestream tutorial on GPT-4 prompt engineering with Microsoft MVP/Suzhou Industrial Park Big Data Special Expert Hua Qiu."
+        date: "Feb 2024",
+        content: "Co-hosted a technical livestream on GPT-4 Prompt Engineering with Microsoft MVP and Suzhou Industrial Park Big Data Expert, Qiu Hua."
       },
       {
-        date: "2024/06/18",
-        content: "Collaborated with Microsoft MVP/MCT Instructor Jiadong Chen on a livestream teaching no-code AI collaboration tool Microsoft Copilot Studio."
+        date: "Jun 2024",
+        content: "Partnered with Microsoft MVP/MCT Instructor Jiadong Chen to deliver an online tutorial on Microsoft Copilot Studio, a no-code AI tool."
       },
       {
-        date: "2024/08/27",
-        content: "Partnered with Microsoft MVP/Microsoft Technical Community Regional Director Yiting Zhu to deliver a livestream tutorial on creating prompt flow applications in Azure AI Studio."
+        date: "Aug 2024",
+        content: "Worked with Microsoft MVP/Regional Director Zhu Yiting to broadcast a tutorial on building Prompt Flow applications in Azure AI Studio."
       },
       {
-        date: "2024/10/15",
-        content: "Led a multi-platform livestream tutorial on the principles and implementation of LangChain.js and RAG technology via Microsoft Reactor platform."
+        date: "Oct 2024",
+        content: "Independently planned and presented a multi-platform livestream via the official Microsoft Reactor, sharing the principles and implementation of LangChain.js and RAG."
       }
     ]
   },
   {
     id: "lab-member",
-    title: "University Lab Member",
-    role: "Lead Developer",
-    period: "2021 - Present",
-    description: "Joined the Innovation Laboratory of the School of Computer Science in July 2021. Responsible for developing the University Student Innovation and Entrepreneurship Management System, which earned software copyright certification and was upgraded from a university-level project to a key provincial project in Jiangsu."
+    title: "University Innovation Lab",
+    role: "Core Developer & Project Lead",
+    period: "Jul 2021 - Present",
+    description: "Joined the computer science innovation lab as a core member, leading the development of the 'Student Innovation and Entrepreneurship Management System.' The project secured a software copyright and was successfully promoted from a university-level initiative to a provincial key project."
   }
 ];
 
 export const awards: Award[] = [
+    {
+    id: "2023-comp-design",
+    year: 2023,
+    title: 'China Collegiate Computing Competition (National 3rd Prize)',
+    level: 'Management Information Systems Track',
+    certNumber: "JSJDS2023...",
+    description: "As team lead, spearheaded the full-stack development of the 'Six Arts' campus energy-saving system using Golang, Vue.js, and Flutter."
+  },
   {
     id: "2022-comp-design",
     year: 2022,
-    title: "15th China Collegiate Computing Competition AI Challenge",
-    level: "Provincial Third Prize",
+    title: "China Collegiate Computing Competition (Provincial 3rd Prize)",
+    level: "Artificial Intelligence Challenge",
     certNumber: "2022-AI-00184",
-    description: "Model training and hyperparameter tuning; Yolo, Python, OpenCV"
-  },
-  {
-    id: "2023-software-copyright",
-    year: 2023,
-    title: "Computer Software Copyright Registration - Student Innovation Management System",
-    level: "First Inventor",
-    certNumber: "2023SR0376575",
-    description: "Project lead; SpringBoot, Redis, MySQL, Mybatis-Plus"
-  },
-  {
-    id: "2023-comp-design",
-    year: 2023,
-    title: '16th China Collegiate Computing Competition Management System Track',
-    level: '"Six Arts" Campus Energy Conservation System - National Third Prize',
-    certNumber: "JSJDS202300532023018646000360915327",
-    description: "Team leader; MySQL, Redis, Vue.js, Golang, Flutter"
-  },
-  {
-    id: "2024-software-copyright-1",
-    year: 2024,
-    title: "Computer Software Copyright Registration - Online Examination System",
-    level: "First Inventor",
-    certNumber: "2024SR0426812",
-    description: "Project lead; Egg.js, Vue.js, Postgres, Redis"
-  },
-  {
-    id: "2024-software-copyright-2",
-    year: 2024,
-    title: "Computer Software Copyright Registration - College Student Employment Analysis System",
-    level: "Project Team Member",
-    certNumber: "2024SR0600131",
-    description: "Backend and AI; LLM, RAG, Python, MySQL"
-  },
-  {
-    id: "2024-software-copyright-3",
-    year: 2024,
-    title: "Computer Software Copyright Registration - University Counselor Assessment System",
-    level: "First Inventor",
-    certNumber: "2024SR1857883",
-    description: "Full-stack; Vue.js, Golang, MySQL, Redis"
+    description: "Responsible for core algorithm implementation, utilizing Python, OpenCV, and YOLO for model training and hyperparameter tuning."
   },
   {
     id: "2024-software-copyright-4",
     year: 2024,
-    title: "Electronic Copyright Certification - Sea Music",
-    level: "First Inventor and Copyright Owner",
+    title: "Electronic Copyright - Sea Music (Independent Developer)",
+    level: "First Copyright Holder",
     certNumber: "2024SA0125819",
-    description: "Huawei Harmony OS Next; ArkTS, Node.js"
-  }
+    description: "An independently developed music client for Harmony OS Next, demonstrating rapid productization and community management skills."
+  },
+  {
+    id: "2023-software-copyright",
+    year: 2023,
+    title: "Software Copyright - Student Innovation Mgmt System",
+    level: "First Inventor",
+    certNumber: "2023SR0376575",
+    description: "Led the project's architecture and backend development using SpringBoot, Redis, and MySQL."
+  },
+  {
+    id: "2024-software-copyright-1",
+    year: 2024,
+    title: "Software Copyright - Online Examination System",
+    level: "First Inventor",
+    certNumber: "2024SR0426812",
+    description: "Headed the development with a tech stack of Egg.js, Vue.js, PostgreSQL, and Redis."
+  },
+  {
+    id: "2024-software-copyright-3",
+    year: 2024,
+    title: "Software Copyright - University Counselor Assessment System",
+    level: "First Inventor",
+    certNumber: "2024SR1857883",
+    description: "Handled full-stack development using Vue.js, Golang, MySQL, and Redis."
+  },
 ];
+
 
 export const projects: Project[] = [
   {
-    "id": "seaside-js",
-    "title": "SeaSideJS",
-    "description": "Inspired by the book 'Design and Implementation of Vue.js', this is my learning repository attempting to recreate the core principles of Vue.js. Unlike Vue, this project doesn't use VNode but relies on simple DOM operations because I wasn't familiar with AST at the time.",
-    "techStack": "JavaScript/TypeScript",
-    "link": "https://github.com/Okysu/SeaSideJS"
-  },
-  {
-    "id": "1y-language",
-    "title": "1y-Language",
-    "description": "My exploration of SeaSideJS sparked my interest in writing custom interpreters. After reading Thorsten Ball's 'Writing an Interpreter in Go', I wrote this custom interpreter in Go and added modern language features.",
-    "techStack": "Golang",
-    "link": "https://github.com/Okysu/1y-Language"
-  },
-  {
     "id": "natural-language-query-language",
-    "title": "NLQL-Python",
-    "description": "Query natural language like SQL—SELECT SENTENCE WHERE CONTAINS('example')! While reflecting on the challenges of using RAG in LLM application development, I realized retrieval is the most critical part. Inspired by SQL, I wondered if using SQL-like statements to query natural language could enable more flexible and precise information retrieval. Thanks to my foundational learning from SeaSideJS and 1y-Language, I was able to go from idea to implementation in just one evening.",
-    "techStack": "Python",
+    "title": "NLQL-Python: A Natural Language Query Language",
+    "description": "To address the precision limitations of RAG retrieval in LLM applications, I designed and implemented an innovative SQL-like query engine for natural language. This project showcases a rapid idea-to-implementation capability and a deep understanding of language parsing and information retrieval.",
+    "techStack": "Python/AST/Language Parsing",
     "link": "https://github.com/natural-language-query-language/nlql-python"
   },
   {
-    "id": "chatgpt-web",
-    "title": "Chat-GPT-Next-Web-Multi-Users",
-    "description": "A deployable GPT web application with multi-user login support. As both the president of my university's computer association and a Microsoft Student Ambassador, I planned to use excess Azure Credit to help fellow students learn about AI. This project, based on Hk-Gosuto/ChatGPT-Next-Web-LangChain, adds features like credit tracking and history query to prevent overuse and budget overruns.",
-    "techStack": "React/Next.js/LangChain",
-    "link": "https://github.com/Okysu/Chat-GPT-Next-Web-Multi-Users"
-  },
-  {
     "id": "sea-music",
-    "title": "Sea Music",
-    "description": "A third-party NetEase Cloud Music client developed using Harmony OS Next API 12. It supports multiple login methods and core music features such as playlist management, song search, and personal FM. Additional features include timer shutdown, dark mode, and custom fonts. Developed in less than three days, it reached 500+ downloads on the first day and has a community of over 500 users. Users still sideload it, generating about 100GB of traffic monthly.",
+    "title": "Sea Music: A Harmony OS Next Music Client",
+    "description": "Independently developed a third-party music client in under three days, achieving over 500 downloads on the first day and building a community of 500+ users. The project remains active, generating ~100GB of monthly traffic, validating my skills in rapid development, product delivery, and community management.",
     "techStack": "Harmony OS Next/ArkTS/Node.js",
     "link": "https://github.com/Okysu/harmony-next-music-sharing"
+  },
+  {
+    "id": "1y-language",
+    "title": "1y-Language: A Custom Programming Language Interpreter",
+    "description": "Inspired by 'Writing an Interpreter in Go,' I independently designed and implemented an interpreter with modern language features. This project demonstrates a solid foundation in computer science fundamentals like compiler theory, lexical analysis, and parsing.",
+    "techStack": "Golang/Interpreter/Compilers",
+    "link": "https://github.com/Okysu/1y-Language"
+  },
+    {
+    "id": "seaside-js",
+    "title": "SeaSideJS: A Recreation of Vue.js Core Principles",
+    "description": "A learning project inspired by 'The Design and Implementation of Vue.js' to explore and replicate its core ideas. This project involved in-depth research into frontend framework reactivity and DOM manipulation principles, showcasing a spirit of exploration for underlying framework mechanics.",
+    "techStack": "JavaScript/TypeScript/Frontend-Frameworks",
+    "link": "https://github.com/Okysu/SeaSideJS"
+  },
+  {
+    "id": "chatgpt-web",
+    "title": "Multi-User ChatGPT-Next-Web",
+    "description": "Enhanced an existing open-source project by adding multi-user management, credit tracking, and history query features to facilitate shared access to Azure AI resources within a community. This project highlights my ability to understand, extend, and deploy existing codebases for practical applications.",
+    "techStack": "React/Next.js/LangChain",
+    "link": "https://github.com/Okysu/Chat-GPT-Next-Web-Multi-Users"
   }
-];
+]
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend Development",
+    title: "Frontend Technologies",
     skills: [
-      { name: "Vue.js", level: "advanced" },
-      { name: "React", level: "intermediate" },
-      { name: "TypeScript", level: "advanced" }
+      { name: "Vue.js / React", level: "advanced" },
+      { name: "TypeScript", level: "advanced" },
+      { name: "Harmony OS Next", level: "intermediate" }
     ]
   },
   {
-    title: "Backend Development",
+    title: "Backend Technologies",
     skills: [
-      { name: "Python", level: "intermediate" },
-      { name: "Golang", level: "intermediate" },
-      { name: "Node", level: "advanced" }
+      { name: "Golang", level: "advanced" },
+      { name: "Node.js / Python", level: "advanced" },
+      { name: "Java / SpringBoot", level: "intermediate" }
     ]
   },
   {
-    title: "Databases",
+    title: "Databases & Middleware",
     skills: [
-      { name: "MySQL", level: "advanced" },
-      { name: "MongoDB", level: "intermediate" },
-      { name: "Redis", level: "advanced" }
+      { name: "MySQL / PostgreSQL", level: "advanced" },
+      { name: "Redis", level: "advanced" },
+      { name: "MongoDB", level: "intermediate" }
     ]
   }
 ];
