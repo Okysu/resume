@@ -50,11 +50,7 @@ const ResumeWebsite: React.FC<ResumeProps> = ({ initialLanguage = 'zh' }) => {
     const t = translations[language];
     const { basicInfo, experiences, awards, projects, skillCategories } = getData();
     
-    // --- 使用动态文本Hook ---
-    const bioTags = language === 'zh' 
-        ? ["全栈开发者", "AI 应用开发者", "微软学生大使", "HarmonyOS 开发者"]
-        : ["Full-Stack Developer", "AI Application Developer", "Microsoft Student Ambassador", "HarmonyOS Developer"];
-    const dynamicBio = useDynamicText(bioTags);
+    const dynamicBio = useDynamicText(basicInfo.bioTags);
 
     const sectionsRef = useRef<Map<string, HTMLElement | null>>(new Map());
 

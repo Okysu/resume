@@ -7,6 +7,7 @@ export const basicInfo: BasicInfo = {
   phone: "+86 18852920107",
   email: "yby@ecanse.com",
   description: "A passionate Full-Stack Developer and AI Application Explorer with a broad technical vision and solid engineering practices. <strong>Possesses a deep understanding of Vue.js reactivity principles and the ability to build complex systems from scratch.</strong> Demonstrates rapid learning and application capabilities, mastering Go to develop an award-winning project in a short timeframe. Proficient in a tech stack including Python, Golang, and Node.js, with expertise in databases like MySQL and Redis.",
+  bioTags: ["Full-Stack Developer", "AI Application Developer", "Microsoft Student Ambassador", "HarmonyOS Developer"],
   links: {
     resume: "https://www.yby.zone",
     blog: "https://blog.yby.zone",

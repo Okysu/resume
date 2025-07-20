@@ -7,6 +7,7 @@ export interface BasicInfo {
   phone: string;
   email: string;
   description: string;
+  bioTags: string[];
   links: {
     resume: string;
     blog: string;

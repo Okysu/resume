@@ -7,6 +7,7 @@ export const basicInfo: BasicInfo = {
   phone: "+86 18852920107",
   email: "yby@ecanse.com",
   description: "一名对技术充满热忱的全栈开发者与AI应用探索者，具备广阔的技术视野和扎实的工程实践能力。<strong>对Vue.js响应式原理有深入研究，并具备从零到一构建复杂系统的能力。</strong> 拥有在较短时间内掌握并应用Go语言完成获奖项目的快速学习与实践能力。技术栈涵盖Python、Golang及Node.js，并精通MySQL、Redis等数据库技术。",
+  bioTags: ["全栈开发者", "AI 应用开发者", "微软学生大使", "鸿蒙开发者"],
   links: {
     resume: "https://www.yby.zone",
     blog: "https://blog.yby.zone",
